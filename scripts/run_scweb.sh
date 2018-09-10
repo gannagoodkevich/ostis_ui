@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd ../sc-web/server/
-python app.py
+python2 app.py
 cd -

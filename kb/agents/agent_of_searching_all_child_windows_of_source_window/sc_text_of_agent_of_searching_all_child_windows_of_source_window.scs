@@ -1,0 +1,6 @@
+sc_text_of_agent_of_searching_all_child_windows_of_source_window
+-> rrel_key_sc_element:
+	agent_of_searching_all_child_windows_of_source_window;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_searching_all_child_windows_of_source_window = [*^"file://agent_of_searching_all_child_windows_of_source_window.scsi"*];;

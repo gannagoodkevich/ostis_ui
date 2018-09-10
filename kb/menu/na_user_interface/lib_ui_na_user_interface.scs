@@ -1,0 +1,26 @@
+lib_ui_na_user_interface
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команды для пользовательского интерфейса]
+	(* <- lang_ru;; *);
+	[Library component. Commands for user interface]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_non_atomic_reusable_components;
+
+<= nrel_library_component_decomposition:
+{
+	lib_comp_ui_home_task;
+	lib_component_ui_menu_file_for_determining_the_location_of_the_entity_in_space;
+	lib_comp_ui_menu_file_for_finding_agent_by_input_elements;
+	lib_comp_ui_menu_file_for_finding_agent_by_key_elements;
+	lib_component_ui_menu_file_to_counting_questions;
+	lib_component_ui_menu_file_to_counting_unsuccessfully_questions;
+	lib_component_ui_menu_file_to_printing_relevant_command;
+	lib_component_ui_menu_file_to_printing_relevant_subject_area;
+	lib_ui_menu_file_for_searching_all_child_windows_of_source_windows;
+	lib_component_ui_menu_file_for_searching_the_frequency_of_use_of_each_key_element;
+	lib_comp_searching_the_most_relevant_key_element
+};;
+
+lib_ui_na_user_interface = [*^"file://ui_na_user_interface.scsi"*];;
