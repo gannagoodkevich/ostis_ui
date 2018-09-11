@@ -1,0 +1,23 @@
+lib_component_agent_for_home_task
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент запуска домашнего задания]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent of running home task]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_for_home_task; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_for_home_task;;
+
+action_for_home_task
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. запустить домашнее задание]
+ 	(* <- lang_ru;; *);
+ 	[action. run home task]
+ 	(* <- lang_en;; *);; 

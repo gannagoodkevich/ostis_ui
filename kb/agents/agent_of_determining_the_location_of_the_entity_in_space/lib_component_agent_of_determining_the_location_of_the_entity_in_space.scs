@@ -1,0 +1,36 @@
+lib_component_agent_of_determining_the_location_of_the_entity_in_space
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент определения расположения сущности в пространстве]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of determining the location of the entity in space]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_determining_the_location_of_the_entity_in_space;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_Determining_The_Location_Of_The_Entity_In_Space.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+
+sc_node_not_relation -> action_of_determining_the_location_of_the_entity_in_space;;
+
+action_of_determining_the_location_of_the_entity_in_space => nrel_main_idtf:
+	[действие. определить расположение сущности в пространстве]
+		(*<- lang_ru;;*);;
+action_of_determining_the_location_of_the_entity_in_space => nrel_main_idtf:
+	[action. determine the location of the entity in space]
+		(* <- lang_en;; *);;

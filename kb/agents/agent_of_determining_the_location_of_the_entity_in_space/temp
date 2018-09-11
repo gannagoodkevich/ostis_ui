@@ -1,0 +1,148 @@
+        -> .agent_of_determining_the_location_of_the_entity_in_space_operator9A 
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _manager;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _set_of_nodes;;
+
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator;;//на ответ
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9B;;    
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9Aa
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [///////////////// in 9A];;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9B;;   
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9B 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_nodes;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _manager;;
+
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9C;; // определить МК
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator_return;;    
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;; 
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9D;;  
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_boundary_layout_manager;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _manager;;
+
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9E;; 
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator10A;;      
+			*);;
+
+        -> .agent_of_determining_the_location_of_the_entity_in_space_operator9E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9F;;    
+			*);;
+
+        -> .agent_of_determining_the_location_of_the_entity_in_space_operator9F
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _manager;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9G;;     
+			*);;
+
+        -> .agent_of_determining_the_location_of_the_entity_in_space_operator9G
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_boundary_layout_manager;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9H;;    
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _manager;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation:_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9I;;    
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9I
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_list_layout_manager;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _manager;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9J;;    
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9J
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _manager;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _unknown_node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9K;;    
+			*);;
+
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;    
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9H;;    
+			*);;
