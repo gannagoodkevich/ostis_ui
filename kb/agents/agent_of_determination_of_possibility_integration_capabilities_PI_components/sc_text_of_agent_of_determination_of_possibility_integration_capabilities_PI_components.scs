@@ -1,0 +1,6 @@
+sc_text_of_agent_of_determination_of_possibility_integration_capabilities_PI_components
+-> rrel_key_sc_element:
+	agent_of_determination_of_possibility_integration_capabilities_PI_components;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_determination_of_possibility_integration_capabilities_PI_components = [*^"file://agent_of_determination_of_possibility_integration_capabilities_PI_components.scsi"*];;
