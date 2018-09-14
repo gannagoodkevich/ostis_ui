@@ -119,16 +119,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
             -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
             -> rrel_3: rrel_fixed: rrel_scp_const: nrel_be_in_center;;
 
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator4Aa;;
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator4Aa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [BEGIN!];;   
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator4A;;   
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator4A;;
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator4A
@@ -185,20 +176,9 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _unknown_class;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator5Aa;;
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator5A;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator14A;;      
 			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator5Aa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [IN 5A];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator5A;;   
-			*);;
-
-//для просто быть слева*...
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator5A
 			(*
@@ -305,16 +285,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
 
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator5Ja;;
-			*);;
-		
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator5Ja
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [AFTER CALL2];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator5J;;   
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator5J;;
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator5J
@@ -328,7 +299,6 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator6K;; 
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator5B;;    
 			*);;
-//в обратную сторону
 		
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator6A
 			(*
@@ -435,16 +405,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
 
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator6Ja;;
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator6Ja
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [AFTER CALL2];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator6J;;   
+			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator6J;;
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator6J
@@ -524,7 +485,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator13A;;
 			*);;
-//просто верт* или горизонт*
+
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator7A
 			(*
 			<- searchSetStr3;;
@@ -656,7 +617,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator15A;;
 			*);;
-// граничный МК
+
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator8A 
 			(*
 			<- searchSetStr5;;
@@ -669,17 +630,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _set_of_nodes;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator8Aa;;
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator8B;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9A;;    
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator8Aa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [///////////////// in 8A];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator8B;;   
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator8B 
@@ -690,7 +642,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _manager;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator8C;; // определить МК
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator8C;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9A;;    
 			*);;
 
@@ -818,7 +770,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator13A;; 
 			*);;
-//поточный МК
+
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9A 
 			(*
@@ -832,17 +784,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _set_of_nodes;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9Aa;;
-			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9Ea;;    
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9Aa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [//////////IN 9A];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9B;;   
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9AB;;
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9E;;    
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9B 
@@ -854,7 +797,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_3: rrel_assign: rrel_scp_var: _manager;;
 
 			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9C;;
-			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9Ea;;//9Ea    
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9E;;    
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9C
@@ -878,15 +821,6 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9Q;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9B;;    
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9Ea
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [///////////////// in 9E];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator9E;;   
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9E 
@@ -961,10 +895,10 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sequence_of_placement;;
 
 			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator9J;; 
-			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9S;; //УБРАТЬ
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator9S;; 
 			*);;
 
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9J   //разделить на два!
+		-> .agent_of_determining_the_location_of_the_entity_in_space_operator9J   
 			(*
 			<- searchSetStr5;;
 
@@ -1205,8 +1139,6 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator10A;;  
 			*);;	
 
-//списковый МК
-
         -> .agent_of_determining_the_location_of_the_entity_in_space_operator10A 
 			(*
 			<- searchSetStr3;;
@@ -1217,17 +1149,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _set_of_nodes;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator10Aa;;
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator10B;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11A;;  
-			*);;
-
-        -> .agent_of_determining_the_location_of_the_entity_in_space_operator10Aa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [////////////////////// in 10A];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator10B;;   
 			*);;
 
         -> .agent_of_determining_the_location_of_the_entity_in_space_operator10B
@@ -1517,7 +1440,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_3: rrel_assign: rrel_scp_var: _temp_node;;
 
 			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator10Z;; 
-			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator10AF;;  //проверить!  
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator10AF;;   
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator10Z
@@ -1614,17 +1537,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_set: _set_of_nodes;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Aa;;
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11B;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator14A;;    
-			*);;
-
-        -> .agent_of_determining_the_location_of_the_entity_in_space_operator11Aa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [////////////////////// in 11A];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator11B;;   
 			*);;
 
         -> .agent_of_determining_the_location_of_the_entity_in_space_operator11B
@@ -1658,7 +1572,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_row;; 
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Fa;; 
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11F;; 
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11E;;    
 			*);;
 
@@ -1672,17 +1586,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_column;;  
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Fa;; 
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11F;; 
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11B;; 
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator11Fa
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [////////////////////// in 11Fa];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator11F;;   
 			*);;
 
         -> .agent_of_determining_the_location_of_the_entity_in_space_operator11F
@@ -1693,30 +1598,10 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _manager;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Ga;; 
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11H;; 
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11B;;  
 			*);;
 
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator11Ga
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [////////////////////// in 11Ga];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator11H;;   
-			*);;
-
- 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator11G //убрать!!!
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;    
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: concept_table_layout_manager;;
-
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Ka;;      
-			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11H;;
-			*);;
 
         -> .agent_of_determining_the_location_of_the_entity_in_space_operator11H
 			(*
@@ -1750,17 +1635,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Ka;;
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11K;;
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator14A;;  
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator11Ka
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [////////////////////// in 11K];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator11K;;   
 			*);;
 
         -> .agent_of_determining_the_location_of_the_entity_in_space_operator11K
@@ -1836,7 +1712,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_row;; 
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Ka;; 
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11K;; 
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11Q;;    
 			*);;
 
@@ -1850,17 +1726,8 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_column;;  
 
-			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11Ka;; 
+			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator11K;; 
 			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator11N;; 
-			*);;
-
-		-> .agent_of_determining_the_location_of_the_entity_in_space_operator11Ra
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [////////////////////// in 11Pa];;
-
-			=> nrel_goto: .agent_of_determining_the_location_of_the_entity_in_space_operator11R;;   
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator11R
