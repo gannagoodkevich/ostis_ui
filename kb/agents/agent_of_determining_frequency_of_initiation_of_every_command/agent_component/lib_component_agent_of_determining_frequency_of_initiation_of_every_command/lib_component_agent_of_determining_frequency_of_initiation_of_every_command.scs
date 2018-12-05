@@ -1,4 +1,4 @@
-lib_component_agent_of_counting_questions
+lib_component_agent_of_determining_frequency_of_initiation_of_every_command
 => nrel_main_idtf:
 	[Компонент библиотеки. sc-агент подсчета количества запросов]
 	(* <- lang_ru;; *);
@@ -12,7 +12,7 @@ lib_component_agent_of_counting_questions
 	lib_component_ui_menu_file_to_counting_questions; 
 
 -> rrel_key_sc_element: 
-	.platform_independent_realization_of_sc_agent_of_counting_questions;
+	.platform_independent_realization_of_sc_agent_of_determining_frequency_of_initiation_of_every_command;
 
 <- rrel_key_sc_element:
 	...
@@ -22,7 +22,7 @@ lib_component_agent_of_counting_questions
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Agent_of_counting_questions.html"
+			"file://htmls/Agent_of_determining_frequency_of_initiation_of_every_command.html"
 				(* <- lang_ru;; *);; 
 		*);;
 	*);;

@@ -1,4 +1,4 @@
-sc_agent_of_counting_questions
+sc_agent_of_determining_frequency_of_initiation_of_every_command
 => nrel_main_idtf:
 	[агентная scp-программа подсчета количества запросов] (* <- lang_ru;; *);
 	[agent scp-program to counting questions] (* <- lang_en;; *);
@@ -9,7 +9,7 @@ sc_agent_of_counting_questions
 	(sc_event_add_output_arc => question_initiated);
 
 => nrel_initiation_condition_and_result: 
-	(..sc_agent_of_counting_questions_condition => ..sc_agent_of_counting_questions_result);
+	(..sc_agent_of_determining_frequency_of_initiation_of_every_command_condition => ..sc_agent_of_determining_frequency_of_initiation_of_every_command_result);
 
 <= nrel_sc_agent_key_sc_elements: 
 	{
@@ -19,19 +19,19 @@ sc_agent_of_counting_questions
 	};
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_of_counting_questions
+	.platform_independent_realization_of_sc_agent_of_determining_frequency_of_initiation_of_every_command
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
 		{
-		agent_of_counting_questions
+		agent_of_determining_frequency_of_initiation_of_every_command
 		};;		
 
-	-> sc_agent_of_counting_questions_scp    
+	-> sc_agent_of_determining_frequency_of_initiation_of_every_command_scp    
 		(* <- active_sc_agent;; *);;  
 	*);;
 
-..sc_agent_of_counting_questions_condition
+..sc_agent_of_determining_frequency_of_initiation_of_every_command_condition
 = [*
 	action_to_count_questions _-> .._question;;
 	question_initiated _-> .._question;;
@@ -39,7 +39,7 @@ sc_agent_of_counting_questions
 	.._question _-> .._parameter;;
 *];;
 
-..sc_agent_of_counting_questions_result
+..sc_agent_of_determining_frequency_of_initiation_of_every_command_result
 = [*
 	action_to_count_questions _-> .._question;;
 	question_finished _-> .._question;;
