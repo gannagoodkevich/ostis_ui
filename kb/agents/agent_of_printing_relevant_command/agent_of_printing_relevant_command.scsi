@@ -1,7 +1,7 @@
 agent_of_printing_relevant_command
 => nrel_main_idtf:
-	[агентная scp-программа подсчета количества безуспешных запросов] (* <- lang_ru;; *);
-	[agent of scp-program of counting unsuccessfully questions] (* <- lang_en;; *);
+	[агентная scp-программа вывода наиболее релевантной команды для пользователя] (* <- lang_ru;; *);
+	[agent of scp-program of printing relevant command for user] (* <- lang_en;; *);
 	<- agent_scp_program;;
 
 scp_program -> agent_of_printing_relevant_command 
@@ -46,9 +46,55 @@ scp_program -> agent_of_printing_relevant_command
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _person;;
 			
-			=> nrel_then: .agent_of_printing_relevant_command_operatorA1;;
+			=> nrel_then: .agent_of_printing_relevant_command_operatorJ1;;
 			=> nrel_else: .agent_of_printing_relevant_command_return;;
 			*);;	
+
+		-> .agent_of_printing_relevant_command_operatorJ1 (*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: ui_user;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _person;;
+			
+			=> nrel_then: .agent_of_printing_relevant_command_operatorA1;;
+			=> nrel_else: .agent_of_printing_relevant_command_operator_operator_call_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_printing_relevant_command_operator_operator_call_proc_of_adding_validating_message  
+            (* 
+            <- call;; 
+ 
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_printing_relevant_command_operator_operator_call_proc_of_adding_validating_message_params  
+                (* 
+                -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+                -> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It must be user sign(element of ui_user)];; 
+                *);; 
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr2;; 
+ 
+            => nrel_goto: .agent_of_printing_relevant_command_operator_operator_waitreturn_proc_of_adding_validating_message;; 
+            *);; 
+ 
+        -> .agent_of_printing_relevant_command_operator_operator_waitreturn_proc_of_adding_validating_message 
+            (* 
+            <- waitReturn;; 
+ 
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr2;; 
+ 
+            => nrel_goto: .agent_of_printing_relevant_command_operator_operator_unsuccessfully_finished_question;; 
+            *);;
+
+        -> .agent_of_printing_relevant_command_operator_operator_unsuccessfully_finished_question 
+            (* 
+            <- genElStr3;; 
+ 
+            -> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;; 
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+ 
+            => nrel_goto: .agent_of_printing_relevant_command_return;;  
+            *);;
 
 		-> .agent_of_printing_relevant_command_operatorA1 (*
 			<- genEl;;
@@ -85,8 +131,29 @@ scp_program -> agent_of_printing_relevant_command
 				*);;
 
 			=> nrel_then: .agent_of_printing_relevant_command_operator5;;
-			=> nrel_else: .agent_of_printing_relevant_command_return;;
+			=> nrel_else: .agent_of_printing_relevant_command_operatorZ1;;
 			*);;
+
+		-> .agent_of_printing_relevant_command_operatorZ1 (*	
+			<- call;; 
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_general_action_comment;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_determining_frequency_of_initiation_of_every_command_call_proc_of_adding_general_action_comment_params (* 
+					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [The search hasn't given any results];; 
+				*);;		  	
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;		  
+		
+			=> nrel_goto: .agent_of_printing_relevant_command_operatorZ2;;
+		*);; 
+
+		-> .agent_of_printing_relevant_command_operatorZ2 (* 
+			<- waitReturn;; 
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;; 
+		
+			=> nrel_goto: .agent_of_printing_relevant_command_return;; 
+		*);;
 
 		-> .agent_of_printing_relevant_command_operator5
 			(*
@@ -252,64 +319,12 @@ scp_program -> agent_of_printing_relevant_command
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: relevance;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
 
 			=> nrel_goto: .agent_of_printing_relevant_command_operatorE6;;
 			*);;
 
 		-> .agent_of_printing_relevant_command_operatorE6 (*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: immeasurable_parameter;;
-
-			=> nrel_goto: .agent_of_printing_relevant_command_operatorE7;;
-			*);;
-
-		-> .agent_of_printing_relevant_command_operatorE7 (*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
-
-			=> nrel_goto: .agent_of_printing_relevant_command_operatorE8;;
-			*);;
-
-		-> .agent_of_printing_relevant_command_operatorE8 (*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: immeasurable_parameter;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: relevance;;
-
-			=> nrel_goto: .agent_of_printing_relevant_command_operatorE8_1;;
-			*);;
-
-		-> .agent_of_printing_relevant_command_operatorE8_1 (*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
-
-			=> nrel_goto: .agent_of_printing_relevant_command_operatorE9;;
-			*);;
-
-		-> .agent_of_printing_relevant_command_operatorE9 (*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: relevance;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: relevant_command;;
-
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-
-			=> nrel_goto: .agent_of_printing_relevant_command_operatorE10;;
-			*);;
-
-		-> .agent_of_printing_relevant_command_operatorE10 (*
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
