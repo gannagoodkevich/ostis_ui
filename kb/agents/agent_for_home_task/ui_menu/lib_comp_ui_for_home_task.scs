@@ -1,0 +1,12 @@
+lib_component_ui_for_home_task
+=> nrel_main_idtf:
+	[Компонент библиотеки. Действие. Запустить домашнее задание]
+	(* <- lang_ru;; *);
+	[Library component. Action. Run home task]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;;
+	
+lib_component_ui_for_home_task = [*^"file://ui_for_home_task.scsi"*];; 
