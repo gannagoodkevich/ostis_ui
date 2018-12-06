@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/relation" idtf="nrel_ui_command_template" shapeColor="193" id="45005024" parent="0" left="0" top="0" right="158.141" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="666" y="206" haveBus="false" idtf_pos="0">
+        <node type="node/const/general_node" idtf="test_quest_2" shapeColor="193" id="46731456" parent="0" left="0" top="0" right="73.6719" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="276" y="213" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="test_ui_menu_file_for_finding_definition" shapeColor="0" id="55478688" parent="0" left="0" top="0" right="230.312" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="617" y="272" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="test_ui_menu_file_for_finding_definitional_domain" shapeColor="0" id="45988192" parent="0" left="0" top="0" right="287.359" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="645.667" y="406" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="test_quest_1" shapeColor="0" id="44261328" parent="0" left="0" top="0" right="73.6719" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="277" y="458" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="test_quest_3" shapeColor="0" id="44524512" parent="0" left="0" top="0" right="73.6719" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="78.8333" y="342.833" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="ui_user_command_class_atom" shapeColor="0" id="47211440" parent="0" left="0" top="0" right="173.297" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="679.333" y="270" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_ui_command_template" shapeColor="0" id="45005024" parent="0" left="0" top="0" right="158.141" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="666" y="206" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/relation" idtf="nrel_ui_command_template" shapeColor="0" id="46700880" parent="0" left="0" top="0" right="158.141" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="705.5" y="464.167" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/general_node" idtf="ui_menu_file_for_finding_definition" shapeColor="0" id="55478688" parent="0" left="0" top="0" right="205.781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="617" y="272" haveBus="false" idtf_pos="2">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/group" idtf="action_find_definition" shapeColor="0" id="46158512" parent="0" left="0" top="0" right="127.828" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="275" y="123" haveBus="false" idtf_pos="0">
@@ -29,21 +44,6 @@
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/group" idtf="ui_user_command_class_atom" shapeColor="0" id="46846208" parent="0" left="0" top="0" right="173.297" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="714.833" y="406.833" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/general_node" idtf="ui_menu_file_for_finding_definitional_domain" shapeColor="0" id="45988192" parent="0" left="0" top="0" right="262.828" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="645.667" y="406" haveBus="false" idtf_pos="1">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/group" idtf="ui_user_command_class_atom" shapeColor="0" id="47211440" parent="0" left="0" top="0" right="173.297" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="679.333" y="270" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/general_node" idtf="quest_1" shapeColor="0" id="44261328" parent="0" left="0" top="0" right="49.1406" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="277" y="458" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/general_node" idtf="quest_2" shapeColor="0" id="46731456" parent="0" left="0" top="0" right="49.1406" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="276" y="213" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/general_node" idtf="quest_3" shapeColor="0" id="44524512" parent="0" left="0" top="0" right="49.1406" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="78.8333" y="342.833" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="Agent_of_determining_frequency_of_initiation_of_every_command_AUTHOR_1" shapeColor="0" id="46400400" parent="0" left="0" top="0" right="446.078" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="276" y="343" haveBus="false" idtf_pos="0">
