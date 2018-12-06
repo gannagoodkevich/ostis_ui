@@ -3,7 +3,10 @@ ui_na_user_interface <- ui_user_command_class_noatom; ui_one_argument_command_cl
 => nrel_main_idtf: [UI commands] (* <- lang_en;; *);
 <= nrel_ui_commands_decomposition:
 {
-	ui_menu_file_for_determining_the_location_of_the_entity_in_space;
+	ui_for_home_task;
+	ui_menu_file_for_determining_the_location_of_the_entity_in_space;	
+	ui_menu_file_for_finding_all_styles_used_in_the_document;
+	ui_menu_file_for_finding_certain_styles_used_in_the_document;
 	ui_menu_file_for_finding_agent_by_input_elements;
 	ui_menu_file_for_finding_agent_by_key_elements;
 	ui_menu_file_to_determine_frequency_of_initiation_of_every_command;
