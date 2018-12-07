@@ -1,0 +1,1023 @@
+agent_of_finding_color_of_component_in_current_format 
+=> nrel_main_idtf: 
+	[агентная scp-программа поиска цвета компонента в выбранном формате] (* <- lang_ru;; *);
+	[agent scp-program of finding color of component in current format] (* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_of_finding_color_of_component_in_current_format
+	(*
+	-> rrel_params: .agent_of_finding_color_of_component_in_current_format_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_color_of_component_in_current_format_operators
+		(*
+		-> rrel_init: .agent_of_finding_color_of_component_in_current_format_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator1B;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_color_of_component_in_current_format;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator1C;;
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator1C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _component;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator1D;;
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator1D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: class_of_color_model;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator1D1;;
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;
+			*);;
+-> .agent_of_finding_color_of_component_in_current_format_operator1D1
+			(*
+		 	<- genEl;;
+
+            		-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_set: rrel_scp_var: _answer;;
+
+           		 => nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator1E;;
+		 	*);;
+
+	
+		-> .agent_of_finding_color_of_component_in_current_format_operator1E 
+			(*
+		 	<- genEl;;
+
+            		-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _answer_error;;
+
+           		 => nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2A;;
+		 	*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2A
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_user_interface_component;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_add;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _component;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator2B;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_1;;
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2B
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _component;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2C;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2C
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _arc_add;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2D;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2D
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: concept_user_interface_component;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2E;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2E
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _component;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common_add;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _color;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_color_ui_component;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator3A;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_2;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2E1
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _arc_pos_add;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2E2;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2E2
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _arc_common_add;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2E3;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2E3
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_color_ui_component;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator2E4;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator2E4
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator3A1;; 
+			*);;
+
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator3A
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_color;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_add;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator2E1;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_3;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator3A1
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _arc_add;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator3A2;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator3A2
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: concept_color;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator4A1;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4A1
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _set_of_color_models;;
+		  	
+		=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator4A2;;
+		  	
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4A2
+			(*
+		  	<- searchSetStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _color;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common_add;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _color_models;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_digital_realization;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_color_models;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_4;;
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_color_models;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_delete;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _color_model;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B1;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator10C;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B1
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_hsb;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B2;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B3;;
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B2
+			(*
+		  	<- ifCoin;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_hsb;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: class_of_color_model;;
+
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5A;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B3;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B3
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_cielab;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B31;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B4;;
+			*);;
+
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B31
+			(*
+		  	<- ifCoin;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_cielab;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: class_of_color_model;;
+
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5A;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B4;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B4
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_rgb;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B41;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B5;;
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B41
+			(*
+		  	<- ifCoin;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_rgb;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: class_of_color_model;;
+
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5A;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B5;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B5
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_cmyk;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B51;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B6;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B51
+			(*
+		  	<- ifCoin;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_cmyk;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: class_of_color_model;;
+
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6A;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4B6;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B6
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_hex;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator4B61;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4G;;
+			*);;	
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4B61
+			(*
+		  	<- ifCoin;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: concept_hex;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: class_of_color_model;;
+
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator7A;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator4G;;
+			*);;
+
+	
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator4G
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_delete;;
+		  	
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator4B;;
+		  	*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5D2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5D2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_1;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator5D3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5D3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;		  	  
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5D4;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5D4
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5E2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5E2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_2;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator5E3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5E3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+		  	  
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5F1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+		*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5F1
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator5F2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5F2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator5F3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator5F3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator10E1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6D2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6D2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_1;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator6D3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6D3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;		  	  
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6E1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6E1
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6E2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6E2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_2;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator6E3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6E3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+		  	  
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6F1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+		*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6F1
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6F2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6F2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator6F3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6F3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6L1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6L1
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_4;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator6L2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6L2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator6L3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator6L3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator10E1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator7D2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7D2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_1;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator7D3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7D3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_hexadecimal_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;		  	  
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator7E1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7E1
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator7E2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7E2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_2;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator7E3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7E3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_hexadecimal_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+		  	  
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator7F1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+		*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7F1
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator7F2;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7F2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
+		  	  
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator7F3;;    
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator7F3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_hexadecimal_number;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator10E1;;  
+			=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5;;  
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator_error_print_1
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_color_of_component_in_current_format_operator_error_print_1_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _component;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Input parametr isn't a component!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_error;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10B;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator_error_print_2
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_color_of_component_in_current_format_operator_error_print_2_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _component;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Component hasn't a color!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_error;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10B;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator_error_print_3
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_color_of_component_in_current_format_operator_error_print_3_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _component;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Color not belongs to a class of color!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_error;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10B;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator_error_print_4
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_color_of_component_in_current_format_operator_error_print_4_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _component;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Color has not a digital realization!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_error;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10B;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator_error_print_5
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_color_of_component_in_current_format_operator_error_print_5_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _component;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [In cortege is not a number!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_error;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10B;;
+			*);;
+
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator10B
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10C;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator10C
+                  	(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10D;;
+			*);;
+
+	
+		-> .agent_of_finding_color_of_component_in_current_format_operator10D
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_common:  rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer_error;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator_return;; 
+			*);;
+
+-> .agent_of_finding_color_of_component_in_current_format_operator10E1
+			(*
+		  	<- searchSetStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _color;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common_add;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_pos_add;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_digital_realization;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_then: .agent_of_finding_color_of_component_in_current_format_operator10E2;;
+		  	=> nrel_else: .agent_of_finding_color_of_component_in_current_format_operator_return;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator10E2
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _color_model;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10E3;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator10E3
+                  	(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator10F;;
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator10F
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_common:  rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_color_of_component_in_current_format_operator_return;; 
+			*);;
+
+		-> .agent_of_finding_color_of_component_in_current_format_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;				
+	
+	*);;
