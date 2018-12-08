@@ -23,3 +23,4 @@ lib_component_proc_of_generating_comment
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
+lib_component_proc_of_generating_comment = [*^"file://proc_of_generating_comment.scsi"*];;
