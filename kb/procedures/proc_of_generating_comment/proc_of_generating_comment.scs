@@ -1,4 +1,5 @@
-scp_program -> proc_of_generating_comment(*
+scp_program -> proc_of_generating_comment
+	(*
   	-> rrel_params: .proc_of_generating_comment_params 
 		(*
 		-> rrel_1: rrel_in: _quest_node;;
