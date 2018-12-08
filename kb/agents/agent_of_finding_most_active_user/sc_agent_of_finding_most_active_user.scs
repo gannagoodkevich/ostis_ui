@@ -1,0 +1,49 @@
+sc_agent_of_finding_most_active_user
+=> nrel_main_idtf:
+	[агентная scp-программа поиска самого активного пользователя] (* <- lang_ru;; *);
+	[agent scp-program of finding most active user] (* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_finding_most_active_user_condition => ..sc_agent_of_finding_most_active_user_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_to_find_most_active_user
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_most_active_user
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_finding_most_active_user
+		};;		
+
+	-> sc_agent_of_finding_most_active_user_scp    
+		(* <- active_sc_agent;; *);;  
+	*);;
+
+..sc_agent_of_finding_most_active_user_condition
+= [*
+	action_to_find_most_active_user _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_of_finding_most_active_user_result
+= [*
+	action_to_find_most_active_user _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;
