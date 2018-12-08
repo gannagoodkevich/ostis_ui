@@ -34,7 +34,7 @@ scp_program -> agent_of_determining_the_location_of_the_entity_in_space
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
 			=> nrel_then: .agent_of_determining_the_location_of_the_entity_in_space_operator1C;;
-			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator14A;;
+			=> nrel_else: .agent_of_determining_the_location_of_the_entity_in_space_operator_return;;
 			*);;
 
 		-> .agent_of_determining_the_location_of_the_entity_in_space_operator1C
