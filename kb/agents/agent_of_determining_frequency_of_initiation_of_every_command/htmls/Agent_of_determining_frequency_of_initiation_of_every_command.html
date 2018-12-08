@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<p> Задачей<b><sc_element sys_idtf = "agent_of_determining_frequency_of_initiation_of_every_command"> агента определения частоты инициирования каждой команды</sc_element></b> является определение числа вызовов каждой команды конкретного <b><sc_element sys_idtf = "ui_user">пользователя</sc_element></b>, который является <b><sc_element sys_idtf = "nrel_authors">автором</sc_element></b> данных команд. На вход данному агенту подается знак <b><sc_element sys_idtf = "ui_user">пользователя</sc_element></b>. Данный агент инициируется при условии появления в памяти вопросной конструкции, соответствующей <b><sc_element sys_idtf = "action_to_determine_frequency_of_initiation_of_every_command">действию. определение частоты инициирования каждой команды</sc_element></b>. Возможные результаты работы агента: 
+		<ul>
+			<li>Если на вход агенту пришел не знак <b><sc_element sys_idtf = "ui_user">пользователя</sc_element></b>, то генерируется сообщение об ошибке (Wrong first parameter! It must be user sign(element of ui_user)).
+			</li>
+			<li>Если в результате определения числа вызовов каждой команды не было найдено ни одной инициированной команды, то генерируется сообщение "The search hasn't given any results".
+			</li>
+			<li>Если определение числа вызовов каждой команды прошло успешно, то будет показана конструкция, содержащая параметр частоты, измеряющий количество вызовов каждой команды <b><sc_element sys_idtf = "ui_user">пользователя</sc_element></b>. Пример результата работы агента представлен на рисунке.
+			</li>
+		</ul> 
+		</p>
+		<img src="result.png" alt="Команда определения частоты инициирования каждой команды"/>		
+	</body>
+</html>

@@ -10,7 +10,7 @@ lib_ui_na_user_interface
 
 <= nrel_library_component_decomposition:
 {
-	lib_comp_ui_for_home_task;
+	lib_component_ui_menu_file_to_find_most_active_user;
 	lib_component_ui_menu_file_for_determining_the_location_of_the_entity_in_space;
 	lib_comp_ui_menu_file_for_finding_agent_by_input_elements;
 	lib_comp_ui_menu_file_for_finding_agent_by_key_elements;
