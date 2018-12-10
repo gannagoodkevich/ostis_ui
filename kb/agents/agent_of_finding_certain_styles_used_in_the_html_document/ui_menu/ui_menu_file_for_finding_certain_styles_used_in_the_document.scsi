@@ -1,0 +1,17 @@
+ui_menu_file_for_finding_certain_styles_used_in_the_document <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_certain_styles_used_in_the_document => nrel_main_idtf: [Найти стили определённого вида в документе] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_certain_styles_used_in_the_document => nrel_main_idtf: [Find certain styles used in the document] (* <- lang_en;; *);;
+	
+ui_menu_file_for_finding_certain_styles_used_in_the_document => ui_nrel_command_template:
+	[*
+		action_of_finding_certain_styles_used_in_the_document _-> ._action_of_finding_certain_styles_used_in_the_document_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;
+			_-> rrel_2:: ui_arg_2;;
+			*);;
+		._action_of_finding_certain_styles_used_in_the_document_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_certain_styles_used_in_the_document => ui_nrel_command_lang_template: [Найти в $ui_arg_1 стили вида $ui_arg_2] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_certain_styles_used_in_the_document => ui_nrel_command_lang_template: [Find $ui_arg_2 styles used in the $ui_arg_1] (* <- lang_en;; *);;

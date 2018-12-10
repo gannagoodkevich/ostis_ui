@@ -1,0 +1,36 @@
+lib_component_agent_of_finding_most_active_user
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска самого активного пользователя]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent for finding most active user]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_to_finding_most_active_user; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_most_active_user;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/agent_of_finding_most_active_user.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+action_to_find_most_active_user <- sc_node_not_relation;;
+
+action_to_find_most_active_user => nrel_main_idtf: 
+	[действие. Найти самого активного пользователя] 
+	(* <- lang_ru;; *);
+	[action. Find most active user] 
+	(* <- lang_en;; *);;

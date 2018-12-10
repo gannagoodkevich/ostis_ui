@@ -1,0 +1,35 @@
+lib_component_agent_of_finding_color_of_component_in_all_formats
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска цвета компонента во всех форматах]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of finding color of component in all formats]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- non_atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_color_of_component_in_all_formats; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_Finding_Color_Of_Component_In_All_Formats.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> question_of_finding_color_of_component_in_all_formats;;
+
+question_of_finding_color_of_component_in_all_formats => nrel_main_idtf:
+	[действие. найти цвет компонента во всех форматах]
+		(*<- lang_ru;;*);;
+question_of_finding_color_of_component_in_all_formats => nrel_main_idtf:
+	[action. search color of component in all formats]
+		(* <- lang_en;; *);;

@@ -1,0 +1,50 @@
+sc_agent_of_finding_color_of_component_in_all_formats
+=> nrel_main_idtf:
+	[sc-агент поиска цвета компонента во всех форматах] (* <- lang_ru;; *);
+	[sc-agent of finding color of component in all formats] (* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_finding_color_of_component_in_all_formats => ..sc_agent_of_finding_color_of_component_in_all_formats_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_of_finding_color_of_component_in_all_formats;
+	proc_of_generating_comment
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_color_of_component_in_all_formats
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_finding_color_of_component_in_all_formats
+		};;
+
+	-> sc_agent_of_finding_color_of_component_in_all_formats_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_finding_color_of_component_in_all_formats_condition
+= [*
+	question_of_finding_color_of_component_in_all_formats _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._parameter;;
+*];;
+
+..sc_agent_of_finding_color_of_component_in_all_formats_result
+= [*
+	question_of_finding_color_of_component_in_all_formats _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> rrel_1:: .._parameter;;
+*];;

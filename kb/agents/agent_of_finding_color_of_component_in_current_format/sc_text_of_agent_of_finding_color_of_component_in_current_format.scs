@@ -1,0 +1,6 @@
+sc_text_of_agent_of_finding_color_of_component_in_current_format
+-> rrel_key_sc_element:
+	agent_of_finding_color_of_component_in_current_format;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_finding_color_of_component_in_current_format = [*^"file://agent_of_finding_color_of_component_in_current_format.scsi"*];;
