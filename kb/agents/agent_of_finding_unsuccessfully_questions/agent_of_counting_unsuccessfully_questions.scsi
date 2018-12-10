@@ -55,6 +55,15 @@ scp_program -> agent_of_counting_unsuccessfully_questions
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer;;
 
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operator4_debug;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operator4_debug
+			(*
+			<- printEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _person;;
+		
 			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operator4;;
 			*);;
 
@@ -64,27 +73,19 @@ scp_program -> agent_of_counting_unsuccessfully_questions
 			-> rrel_1: rrel_fixed: rrel_scp_const: unsuccessfully_questions_template;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
 				-> ... (*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _my_action_param;;
+					-> rrel_1: rrel_fixed: rrel_scp_const: _unsuccessfully_questions_action;;
 					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _actions;;
 					*);;
 				*);;
 			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
 				-> ... (*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _user_param;;
+					-> rrel_1: rrel_fixed: rrel_scp_const: _unsuccessfully_questions_user;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _person;;
 					*);;
 				*);;
 
 			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operator5;;
-			=> nrel_else: .agent_of_counting_unsuccessfully_questions_return_debug;;
-			*);;
-
-		-> .agent_of_counting_unsuccessfully_questions_return_debug (*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [before retur];;
-
-			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_return;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_return;;
 			*);;
 
 		-> .agent_of_counting_unsuccessfully_questions_operator5
@@ -115,17 +116,17 @@ scp_program -> agent_of_counting_unsuccessfully_questions
 			-> rrel_1: rrel_fixed: rrel_scp_const: unsuccessfully_questions_template;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
 				-> ... (*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _my_question;;
+					-> rrel_1: rrel_fixed: rrel_scp_const: _unsuccessfully_questions_question;;
 					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _questions;;
 					*);;
 				-> ... (*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _my_ui_file;;
+					-> rrel_1: rrel_fixed: rrel_scp_const: _unsuccessfully_questions_ui_file;;
 					-> rrel_2: rrel_assign: rrel_scp_var: _ui_file;;
 					*);;
 				*);;
 			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
 				-> ... (*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _my_action_param;;
+					-> rrel_1: rrel_fixed: rrel_scp_const: _unsuccessfully_questions_action;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _action;;
 					*);;
 				*);;

@@ -14,6 +14,7 @@ ui_na_user_interface <- ui_user_command_class_noatom; ui_one_argument_command_cl
 	ui_menu_file_to_find_most_active_user;
 	ui_menu_file_to_counting_unsuccessfully_questions;
 	ui_menu_file_to_printing_relevant_command;
+	ui_menu_file_to_find_users_for_command;
 	ui_menu_file_to_printing_relevant_subject_area;
 	ui_menu_file_for_searching_all_child_windows_of_source_window;
 	ui_menu_file_for_searching_the_frequency_of_use_of_each_key_element;

@@ -1,0 +1,228 @@
+agent_of_finding_users_for_command
+=> nrel_main_idtf:
+	[агентная scp-программа поиска пользователей, запросивших комманду] (* <- lang_ru;; *);
+	[agent of scp-program of counting unsuccessfully questions] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_users_for_command 
+	(*
+	-> rrel_params: .agent_of_finding_users_for_command_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+	-> rrel_operators: .agent_of_finding_users_for_command_operators
+		(*
+
+		-> rrel_init: .agent_of_finding_users_for_command_operator1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_users_for_command_operator2;;
+			=> nrel_else: .agent_of_finding_users_for_command_return;;
+			*);;
+
+		-> .agent_of_finding_users_for_command_operator2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_to_find_users_for_command;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_users_for_command_operator3;;
+			=> nrel_else: .agent_of_finding_users_for_command_return;;
+			*);;
+		
+		-> .agent_of_finding_users_for_command_operator3
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action;;
+			
+			=> nrel_then: .agent_of_finding_users_for_command_operatorA1;;
+			=> nrel_else: .agent_of_finding_users_for_command_return;;
+			*);;
+
+		-> .agent_of_finding_users_for_command_operatorA1 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer;;
+
+			=> nrel_goto: .agent_of_finding_users_for_command_operator4;;
+			*);;
+
+		-> .agent_of_finding_users_for_command_operator4 (*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: find_users_for_command_template;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _find_users_for_command_action_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _action;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_finding_users_for_command_operator5;;
+			=> nrel_else: ..proc_operator1;;
+			*);;
+
+		-> ..proc_operator1
+			(*
+			<- call;; 
+ 
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: ... (* 
+                -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+                -> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It must be an action sign(element of action class)];; 
+                *);; 
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr;; 
+ 
+            => nrel_goto: ..proc_operator2;; 
+			*);;
+
+		-> ..proc_operator2
+			(*
+			<- waitReturn;; 
+ 
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr;; 
+ 
+            => nrel_goto: ..proc_operator3;; 
+			*);;
+		
+		-> ..proc_operator3
+			(*
+			<- genElStr3;; 
+ 
+            -> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;; 
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+ 
+            => nrel_goto: .agent_of_finding_users_for_command_return;;  
+			*);;
+
+		-> .agent_of_finding_users_for_command_operator5
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: find_users_for_command_template;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _find_users_for_command_user_param;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _users;;
+					*);;
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _find_users_for_command_user_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: rrel_set: _answer;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _find_users_for_command_action_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _action;;
+					*);;
+				*);;
+
+			=> nrel_then: ..proc_operator4;;
+			=> nrel_else: ..proc_operator8;; 
+			*);;
+
+		-> ..proc_operator4
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _users;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _user;;
+			
+			=> nrel_then: ..proc_operator5;;
+			=> nrel_else: ..proc_operator7;;
+			*);;
+
+		-> ..proc_operator5
+			(*
+			<- eraseSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _users;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user;;
+			
+			=> nrel_goto: ..proc_operator6;;
+			*);;
+		
+		-> ..proc_operator6
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _command;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_authors;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: ..proc_operator4;;
+			*);;
+		
+		-> ..proc_operator7
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_authors;;
+			
+			=> nrel_goto: .agent_of_finding_users_for_command_operator21;;
+			*);;
+
+		-> ..proc_operator8
+			(*
+			<- call;; 
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_general_action_comment;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (* 
+					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [The search hasn't given any results];; 
+				*);;		  	
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+		
+			=> nrel_goto: ..proc_operator9;;
+			*);;
+
+		-> ..proc_operator9
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_finding_users_for_command_return;;
+			*);;
+
+		-> .agent_of_finding_users_for_command_operator21 (*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_users_for_command_return;;			
+			*);;
+				
+		-> .agent_of_finding_users_for_command_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
