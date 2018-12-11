@@ -1,0 +1,21 @@
+sc_node_not_relation ->	 concept_custom_color_scheme;;
+
+concept_custom_color_scheme => nrel_main_idtf:  [пользовательская цветовая схема](*<- lang_ru ;;*);;
+concept_custom_color_scheme => nrel_idtf: [множество пользовательских цветовых схем](*<- lang_ru ;;*);;
+concept_custom_color_scheme =>  nrel_main_idtf: [custom color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_custom_color_scheme;;
+	=> nrel_main_idtf: [Опр.(пользовательская цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color_scheme;;
+			-> concept_user;;
+
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Пользовательская цветовая схема - цветовая схема, которую создает пользователь не используя правил составления цветовых схем.](*<- lang_ru ;;*);;
+		*);;
+*);;

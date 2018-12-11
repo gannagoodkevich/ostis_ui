@@ -1,0 +1,39 @@
+sc_node_not_relation ->	 concept_perceptual_color_model;;
+
+concept_perceptual_color_model => nrel_idtf: [множество перцепционных цветовых моделей](*<- lang_ru ;;*);;
+concept_perceptual_color_model =>  nrel_main_idtf: [perceptual color model](*<- lang_en ;;*);;
+concept_perceptual_color_model =>  nrel_main_idtf: [перцепционная цветовая модель](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_perceptual_color_model;;
+	=> nrel_main_idtf: [Опр.(перцепционная цветовая модель)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color_model;;
+			-> concept_color;;
+			-> nrel_brightness;;
+			-> nrel_chromaticity;;
+			-> concept_space;;
+			-> nrel_coordinate;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Перцепционная цветовая модель - аппаратно независимая цветовая модель, которая описывает любой воспринимаемый цвет координатами трехмерного пространства, где первое значение описывает яркость, а второе и третье относятся к количественным характеристикам цвета - цветности.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_perceptual_color_model;;
+	-> rrel_key_sc_element: concept_HSB;;
+	
+	=> nrel_main_idtf: [Утверждение(перцепционная цветовая модель, цветовая модель HSB)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовая модель HSB - субтрактивная цветовая модель.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+nrel_chromaticity =>  nrel_main_idtf: [цветности](*<- lang_ru ;;*);;

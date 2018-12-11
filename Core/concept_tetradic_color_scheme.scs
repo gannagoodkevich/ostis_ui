@@ -1,0 +1,57 @@
+sc_node_not_relation ->	 concept_tetradic_color_scheme;;
+
+concept_tetradic_color_scheme => nrel_main_idtf:  [тетрадная цветовая схема](*<- lang_ru ;;*);;
+concept_tetradic_color_scheme => nrel_idtf: [множество тетраднных цветовых схем](*<- lang_ru ;;*);;
+concept_tetradic_color_scheme =>  nrel_main_idtf: [tetradic color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_tetradic_color_scheme;;
+	=> nrel_main_idtf: [Опр.(тетрадная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_scheme;;
+			-> concept_color_circle;;
+			-> nrel_opposite;;
+
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Тетрардная цветовая схема - цветовая схема, для получения которой используется две комплиментарные пары цветов на цветовом круге.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_tetradic_color_scheme;;
+	-> rrel_key_sc_element: concept_triadic_color_scheme;;
+	-> rrel_key_sc_element: concept_color;;
+	-> rrel_key_sc_element: nrel_dominant_color;;
+	-> rrel_key_sc_element: nrel_accent_color;;
+		
+	=> nrel_main_idtf: [Утверждение(тетрадная цветовая схема, цвет, триадная цветовая схема, акцентный цвет*, доминирующий цвет*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Kак и в триадной цветовой схеме, в тетраднoй цветовой схеме oдин цвет должен быть доминирующим, а другие три акцентными.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_tetradic_color_scheme <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://tetr.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+
+nrel_dominant_color => nrel_main_idtf:  [ акцентный цвет*](*<- lang_ru ;;*);;
+nrel_accent_color => nrel_main_idtf:  [доминирующий цвет*](*<- lang_ru ;;*);;
+
+
+*);;
+*];;

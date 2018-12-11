@@ -1,0 +1,56 @@
+sc_node_not_relation ->	 concept_triadic_color_scheme;;
+
+concept_triadic_color_scheme => nrel_main_idtf:  [триадная цветовая схема](*<- lang_ru ;;*);;
+concept_triadic_color_scheme => nrel_idtf: [множество триадных цветовых схем](*<- lang_ru ;;*);;
+concept_triadic_color_scheme =>  nrel_main_idtf: [triadic color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_triadic_color_scheme;;
+	=> nrel_main_idtf: [Опр.(триадная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_scheme;;
+			-> concept_color_circle;;
+
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Триадная цветовая схема - цветовая схема, которая образуется сочетанием трех цветов, равномерно удалённых друг от друга в цветовом круге.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_triadic_color_scheme;;
+	-> rrel_key_sc_element: concept_color;;
+	-> rrel_key_sc_element: nrel_dominant_color;;
+	-> rrel_key_sc_element: nrel_accent_color;;
+	
+	=> nrel_main_idtf: [Утверждение(триадная цветовая схема, акцентный цвет*, доминирующий цвет*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [При использовании триадной схемы следует сделать один цвет - доминирующим, а два другихиспользовать как акценты.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_triadic_color_scheme<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://tria.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;
+
+sc_node_norole_relation -> nrel_dominant_color;;
+nrel_dominant_color => nrel_main_idtf:  [доминирующий цвет*](*<- lang_ru ;;*);;
+
+sc_node_norole_relation -> nrel_accent_color;;
+nrel_accent_color => nrel_main_idtf:  [акцентный цвет*](*<- lang_ru ;;*);;

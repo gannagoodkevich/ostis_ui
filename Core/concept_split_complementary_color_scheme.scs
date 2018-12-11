@@ -1,0 +1,51 @@
+sc_node_not_relation ->	 concept_split_complementary_color_scheme;;
+
+concept_split_complementary_color_scheme => nrel_main_idtf:  [cплит-комплементарная цветовая схема](*<- lang_ru ;;*);;
+concept_split_complementary_color_scheme => nrel_idtf: [множество cплит-комплементарных цветовых схем](*<- lang_ru ;;*);;
+concept_split_complementary_color_scheme =>  nrel_main_idtf: [split-complementary color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_split_complementary_color_scheme;;
+	=> nrel_main_idtf: [Опр.(cплит-комплементарная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_scheme;;
+			-> concept_color_circle;;
+			-> nrel_opposite;;
+			-> nrel_analogous_color;;
+
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Сплит-комплементарная схема - цветовая схема, которая образуется 3 цветами: первый цвет, и 2 соседних цвета от противолежащего данного цвета.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_split_complementary_color_scheme;;
+	-> rrel_key_sc_element: concept_complementary_color_scheme;;
+	
+	=> nrel_main_idtf: [Утверждение(cплит-комплементарная цветовая схема, комплементарная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Сплит-комплементарная схема - расширенная комплементарная цветовая схема.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_split_complementary_color_scheme<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://split.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;
+

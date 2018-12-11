@@ -1,0 +1,46 @@
+sc_node_not_relation ->	 concept_color_circle;;
+
+concept_color_circle => nrel_idtf: [множество цветовых кругoв](*<- lang_ru ;;*);;
+concept_color_circle =>  nrel_main_idtf: [color circle](*<- lang_en ;;*);;
+concept_color_circle =>  nrel_main_idtf: [цветовой круг](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_color_circle;;
+	=> nrel_main_idtf: [Опр.(цветовой круг)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> rrel_secondary_color;;
+			-> rrel_thirdly_color;;
+			-> rrel_primary_color;;
+			-> concept_illustrative_structure;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Цветовой круг - абстрактная иллюстративная структура оттенков цветов в виде круга, который показывает отношения между основными, вторичными, третичными цветами и т.д.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_color_circle;;
+	-> rrel_key_sc_element: concept_color;;
+	-> rrel_key_sc_element: rrel_primary_color;;
+	
+	=> nrel_main_idtf: [Утверждение(цветовой круг, основной цвет')](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [С помощью основных(первичных) цветов можно получить все цвета в цветовом круге.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+concept_color_circle => nrel_inclusion:
+		concept_itten_color_circle;
+		concept_newton_color_circle;
+		concept_goethe_color_circle;
+		concept_osvold_color_circle;;
+
+concept_illustrative_structure =>  nrel_main_idtf: [иллюстративная структура](*<- lang_ru ;;*);;
+
+

@@ -1,0 +1,49 @@
+sc_node_not_relation ->	 concept_monochromatic_color_scheme;;
+
+concept_monochromatic_color_scheme => nrel_main_idtf:  [монохромная цветовая схема](*<- lang_ru ;;*);;
+concept_monochromatic_color_scheme => nrel_idtf: [множество монохромных цветовых схем](*<- lang_ru ;;*);;
+concept_monochromatic_color_scheme =>  nrel_main_idtf: [monochromatic color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_monochromatic_color_scheme;;
+	=> nrel_main_idtf: [Опр.(монохромная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_scheme;;
+			-> nrel_brightness;;
+			-> nrel_saturation;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Монохромная цветовая схема - цветовая схема, для получения которой используется один цвет и различные вариации его яркости и насыщенности.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_monochromatic_color_scheme;;
+	-> rrel_key_sc_element: concept_color_scheme;;
+	
+	=> nrel_main_idtf: [Утверждение(монохромная цветовая схема, цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Монохромная цветовая схема это самый простой вариант цветовой схемы.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_monochromatic_color_scheme<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://mono.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;
+

@@ -1,0 +1,49 @@
+sc_node_not_relation ->	 concept_itten_color_circle;;
+
+concept_color_circle => nrel_idtf: [множество цветовых кругoв Иттена](*<- lang_ru ;;*);;
+concept_color_circle =>  nrel_main_idtf: [Itten's color circle](*<- lang_en ;;*);;
+concept_color_circle =>  nrel_main_idtf: [цветовой круг Иттена](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_color_circle;;
+	=> nrel_main_idtf: [Опр.(цветовой круг Иттена)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color_circle;;
+			-> concept_color;;
+			-> nrel_color_mixing;;
+			-> rrel_primary_color;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Цветовой круг Иттена - цветовой круг, состоящий из 12 цветов, где красный синий и зеленый - первичные цвета, а остальные получают путем смешивания первичных цветов.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_itten_color_circle;;
+	-> rrel_key_sc_element: concept_color_scheme;;	
+	
+	=> nrel_main_idtf: [Утверждение(цветовой круг, основной цвет')](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовой круг Иттена считается классическим и наиболее часто используется в создании цветовых схем.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_complementary_color_scheme <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://itt.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;
+
