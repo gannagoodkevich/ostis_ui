@@ -1,0 +1,25 @@
+ui_menu_file_to_find_most_active_user <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_to_find_most_active_user => nrel_main_idtf: 
+	[Найти самого активного пользователя] 
+	(* <- lang_ru;; *);
+	[Find most active user] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_to_find_most_active_user => ui_nrel_command_template:
+	[*
+		action_to_find_most_active_user _-> ._action_to_find_most_active_user_instance
+			(*
+			_-> ui_arg_1;;					
+			*);;
+		._action_to_find_most_active_user_instance _<- question;;
+	*];;
+
+ui_menu_file_to_find_most_active_user => ui_nrel_command_lang_template: 
+	[Найти самого активного пользователя: $ui_arg_1] 
+	(* <- lang_ru;; *);
+	[Find most active user with argument: $ui_arg_1] 
+	(* <- lang_en;; *);;
+
+
+

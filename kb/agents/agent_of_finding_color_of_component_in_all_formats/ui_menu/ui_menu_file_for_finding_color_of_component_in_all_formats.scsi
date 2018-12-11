@@ -1,0 +1,27 @@
+ui_menu_file_for_finding_color_of_component_in_all_formats <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_color_of_component_in_all_formats => nrel_main_idtf: 
+	[Команда поиска цвета компонента во всех форматах] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_color_of_component_in_all_formats => nrel_main_idtf: 
+	[Request of finding color of component in all formats] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_color_of_component_in_all_formats => ui_nrel_command_template:
+	[*
+		question_of_finding_color_of_component_in_all_formats _-> ._question_of_finding_color_of_component_in_all_formats_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;
+			*);;
+		._question_of_finding_color_of_component_in_all_formats_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_color_of_component_in_all_formats => ui_nrel_command_lang_template: 
+	[Команда поиска цвета компонента во всех форматах: $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_color_of_component_in_all_formats => ui_nrel_command_lang_template: 
+	[Request of finding color of component in all formats: $ui_arg_1] 
+	(* <- lang_en;; *);;
+

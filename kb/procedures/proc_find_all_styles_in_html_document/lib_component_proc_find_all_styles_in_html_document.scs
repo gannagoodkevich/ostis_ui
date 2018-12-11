@@ -1,0 +1,26 @@
+lib_component_proc_find_all_styles_in_html_document
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа поиска внутренних стилей]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program find internal styles]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_find_all_styles_in_html_document;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_Find_All_Styles_In_Html_Document.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_find_all_styles_in_html_document = [*^"file://proc_find_all_styles_in_html_document.scsi"*];;

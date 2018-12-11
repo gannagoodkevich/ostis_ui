@@ -1,0 +1,6 @@
+sc_text_of_agent_of_output_full_specification_of_ui_comp
+-> rrel_key_sc_element:
+	agent_of_output_full_specification_of_ui_comp;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_output_full_specification_of_ui_comp = [*^"file://agent_of_output_full_specification_of_ui_comp.scsi"*];;

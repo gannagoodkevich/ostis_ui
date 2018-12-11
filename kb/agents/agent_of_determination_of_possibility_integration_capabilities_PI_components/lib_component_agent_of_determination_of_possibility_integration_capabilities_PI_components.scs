@@ -1,0 +1,28 @@
+lib_component_agent_of_determination_of_possibility_integration_capabilities_PI_components
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент определение возможности интеграции компонентов пользовательского интерфейса]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of determination of possibility integration capabilities PI components]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_determination_of_possibility_integration_capabilities_PI_components;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/agent_of_determination_of_possibility_integration_capabilities_PI_components.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+

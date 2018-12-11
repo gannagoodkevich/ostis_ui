@@ -1,0 +1,26 @@
+lib_component_proc_search_all_child_windows_of_source_window
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа поиска всех дочерних окон исходного окна]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program search all child windows of source window]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_search_all_child_windows_of_source_window;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_Search_All_Child_Windows_Of_Source_Window.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_search_all_child_windows_of_source_window = [*^"file://proc_search_all_child_windows_of_source_window.scsi"*];;

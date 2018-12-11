@@ -1,0 +1,1348 @@
+agent_of_determination_of_possibility_integration_capabilities_PI_components
+=>nrel_main_idtf:
+[агентная scp-программа определения возможности интегрирования компонентов ПИ] (* <- lang_ru;; *);
+[agent scp-program determination of possibility integration capabilities PI components] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_determination_of_possibility_integration_capabilities_PI_components
+(*
+
+	->rrel_params: .agent_of_determination_of_possibility_integration_capabilities_PI_components_params
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+
+	*);;
+
+	-> rrel_operators: .agent_of_determination_of_possibility_integration_capabilities_PI_components_set 
+		(*
+		-> rrel_init: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1A
+			(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+		
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B1;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B1
+			(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_determination_of_possibility_integration_capabilities_PI_components;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B2;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_return;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B2
+			(*
+			<- searchElStr5;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B3;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_return;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B3
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B4;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_return;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator1B4
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_determination_of_possibility_integration_capabilities_PI_components;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2A;; 
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2B;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_return;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2C;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_label;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2D;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_button;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2F;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_text_label;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2G;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2G
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_icon;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2H;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2H
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_switch_button;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2I;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2I
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_flag_button;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2J;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2J
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_group_of_buttons;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2D;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator2K
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_list;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _core1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _core1;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3C;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3D;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ui_core;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _core1;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3E;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3B;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _core1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _num1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_version;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3F;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _num1;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3G;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _num1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3H;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3H
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3I;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator3I
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _core2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _core2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4C;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4D;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ui_core;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _core2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4E;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4B;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _core2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _num2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_version;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4F;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _num2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4G;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _num2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4H;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4H
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4I;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator4I
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator5A;;
+			*);;
+
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator5A
+			(*
+			<- ifGr;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;   
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator5B;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator5B
+			(*
+			<- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;   
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _bound1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_bound;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_rectangle;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _bound1;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6C;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator6C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_square;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _bound1;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _bound1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _side1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_side;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _side1;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B1;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B2;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B2
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B3;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_be_adjacented;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B4;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B1;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B4
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _side;;
+			
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B5;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B5
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_assign: rrel_scp_var: _side2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B6;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B6
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B7;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B7
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _bound1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _side2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_side;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7C;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7B5;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _side1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_length;;  
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7D;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;    
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7E;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sm;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7F;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7G;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7H;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7H
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _side2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_length;;  
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7I;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7I
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;    
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7J;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7J
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sm;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7K;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7K
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7M;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7M
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7N;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator7N
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _s1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link2;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _bound1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _side1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_side;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _side1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_length;;  
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8C;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;    
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8D;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sm;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8E;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8F;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8G;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator8G
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _s1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _bound2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_bound;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_rectangle;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _bound2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9C;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator9C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_square;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _bound2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _bound2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _side1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_side;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _side1;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B1;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B2;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B2
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B3;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_be_adjacented;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B4;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B1;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B4
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _side;;
+			
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B5;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B5
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;    
+			-> rrel_3: rrel_assign: rrel_scp_var: _side2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B6;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B6
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B7;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B7
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _bound2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _side2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_side;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10C;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10B5;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _side1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_length;;  
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10D;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;    
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10E;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sm;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10F;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10G;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10H;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10H
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _side2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_length;;  
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10I;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10I
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;    
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10J;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10J
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sm;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10K;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10K
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10M;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10M
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10N;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator10N
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _s2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link2;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_check1;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _bound2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _side1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_side;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11B;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;      
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _side1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_length;;  
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11C;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;    
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11D;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sm;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11E;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11F;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;     
+
+			=> nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11G;;
+			=> nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator11G
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _s2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link1;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_check1;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_check1
+			(*
+			<- ifGr;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _s1;;   
+			-> rrel_2: rrel_fixed: rrel_scp_var: _s2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator12A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_check2;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_check2
+			(*
+			<- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _s1;;   
+			-> rrel_2: rrel_fixed: rrel_scp_var: _s2;;	
+
+			=>nrel_then: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator12A;;
+			=>nrel_else: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A;;
+			*);;
+
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator12A
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_general_action_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator12A_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Integration is possible!];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator12B;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator12B
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator14;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_general_action_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13A_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Integration isn't possible!];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13B;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator13B
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator15;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator14
+                  	(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_erase;;
+			*);; 
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator15
+                  	(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator16;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set;;
+
+			=> nrel_goto: .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_return;;
+			*);;
+
+		-> .agent_of_determination_of_possibility_integration_capabilities_PI_components_operator_return
+		 	(*
+		  	<- return;;
+			*);;
+	*);;
+*);;
+

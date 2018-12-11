@@ -1,0 +1,523 @@
+scp_program -> proc_search_all_child_windows_of_source_window    
+	(*
+	-> rrel_params: .proc_search_all_child_windows_of_source_window_params
+		(*
+		-> rrel_1: rrel_in: _set_for_recursion;;
+		-> rrel_2: rrel_in: _answer_tree;;
+		-> rrel_3: rrel_in: _param;;
+		*);;
+
+	-> rrel_operators: .proc_search_all_child_windows_of_source_window_operators
+		(*
+		-> rrel_init: .proc_search_all_child_windows_of_source_window_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_recursion;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_for_del;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _random_window;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1B;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator_return;;
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_ostis_system_permanent_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var:  _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1B1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1C;;
+			*);; 
+
+
+		-> .proc_search_all_child_windows_of_source_window_operator1B1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_ostis_system_permanent_window;;    
+
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1B2;;
+			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1B2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;
+			*);;
+
+
+		->  .proc_search_all_child_windows_of_source_window_operator1C
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_ostis_system_temporary_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1C1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1D;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1C1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_ostis_system_temporary_window;;   
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1C2;;			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1C2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;			
+			*);;
+
+
+		->  .proc_search_all_child_windows_of_source_window_operator1D
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_pop_up_ostis_system_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1D1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1E;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1D1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_pop_up_ostis_system_window;;  
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1D2;;			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1D2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;			
+			*);;
+
+		->  .proc_search_all_child_windows_of_source_window_operator1E
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:  concept_ostis_system_floating_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1E1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1H;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1E1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_ostis_system_floating_window;; 
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1E2;;	
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1E2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;		
+			*);;
+
+
+		->  .proc_search_all_child_windows_of_source_window_operator1H
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_ostis_system_fixed_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:_arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var:  _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1H1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1F;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1H1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_ostis_system_fixed_window;; 
+
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1H2;;
+			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1H2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;	
+			*);;
+
+
+		->  .proc_search_all_child_windows_of_source_window_operator1F
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_window_ostis_system_without_scroll_bar;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1F1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1G;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1F1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_window_ostis_system_without_scroll_bar;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1F2;;			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1F2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;
+			*);;
+
+		->  .proc_search_all_child_windows_of_source_window_operator1G
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_window_ostis_system_with_horizontal_scroll_bar;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1G1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1M;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1G1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_window_ostis_system_with_horizontal_scroll_bar;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1G2;;
+			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1G2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;
+			*);;
+			
+
+		->  .proc_search_all_child_windows_of_source_window_operator1M
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_window_ostis_system_with_vertical_scroll_bar;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1M1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator1I;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1M1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_window_ostis_system_with_vertical_scroll_bar;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1M2;;			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1M2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;
+			*);;
+
+		->  .proc_search_all_child_windows_of_source_window_operator1I
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:  concept_window_ostis_system_with_horizontal_and_vertical_scroll_bar;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator1I1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator_erase;;
+			*);; 
+
+		-> .proc_search_all_child_windows_of_source_window_operator1I1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_window_ostis_system_with_horizontal_and_vertical_scroll_bar;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1I2;;
+			
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator1I2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;      
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2A;;
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;    
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_child_window_ostis_system;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var:  _answer_tree;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var:  _answer_tree;;
+		
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator2B1;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator2B;;   
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2B1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_child_window_ostis_system;;    
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2B;;
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2B
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc3;;    
+			-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;    
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dependent_window_ostis_system;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var:  _answer_tree;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var:  _answer_tree;;
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator2C;; 
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator2D;;    
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _answer_tree;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_dependent_window_ostis_system;;     
+
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2D;;
+		*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2D
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _set_for_second_recursion;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2E;;  
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2E
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _random_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc3;;    
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_window;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;    
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_child_window_ostis_system;;
+	
+			->rrel_set_3: rrel_fixed:  rrel_scp_var:  _set_for_second_recursion;; 
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator2G;;
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator2G;;
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2G
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _random_window;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc3;;    
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_window2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;    
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dependent_window_ostis_system;; 
+	
+			->rrel_set_3: rrel_fixed:  rrel_scp_var:  _set_for_second_recursion;; 
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator2J;;
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator2H;;   
+			*);;
+
+
+		-> .proc_search_all_child_windows_of_source_window_operator2H
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var:  _set_for_second_recursion;;  
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;  
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_random_window;;      
+
+
+			=> nrel_then: .proc_search_all_child_windows_of_source_window_operator2J;;
+			=> nrel_else: .proc_search_all_child_windows_of_source_window_operator_erase_set;;
+		*);;
+		
+
+		-> .proc_search_all_child_windows_of_source_window_operator2J
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_all_child_windows_of_source_window;;    
+			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_search_all_child_windows_of_source_window_operator5D_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_second_recursion;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer_tree;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _random_window;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator2K;;  
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator2K
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator_erase_set;;
+			*);;	
+
+		-> .proc_search_all_child_windows_of_source_window_operator_erase_set
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_for_second_recursion;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator_erase;;
+			*);;
+
+		-> .proc_search_all_child_windows_of_source_window_operator_erase
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_for_del;;
+
+			=> nrel_goto: .proc_search_all_child_windows_of_source_window_operator1A;;
+			*);;
+
+
+		-> .proc_search_all_child_windows_of_source_window_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

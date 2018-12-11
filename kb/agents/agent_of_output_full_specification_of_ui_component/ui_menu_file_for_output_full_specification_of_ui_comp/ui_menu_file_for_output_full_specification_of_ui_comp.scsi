@@ -1,0 +1,16 @@
+ui_menu_file_for_output_full_specification_of_ui_comp <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_output_full_specification_of_ui_comp => nrel_main_idtf: [Вывести полную спецификацию заданного компонента ПИ] (* <- lang_ru;; *);;
+ui_menu_file_for_output_full_specification_of_ui_comp => nrel_main_idtf: [Output full specification of UI component] (* <- lang_en;; *);;
+	
+ui_menu_file_for_output_full_specification_of_ui_comp => ui_nrel_command_template:
+	[*
+		action_of_output_full_specification_of_ui_comp _-> ._action_of_output_full_specification_of_ui_comp_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_of_output_full_specification_of_ui_comp_instance _<- question;;
+	*];;
+
+ui_menu_file_for_output_full_specification_of_ui_comp => ui_nrel_command_lang_template: [Вывести полную спецификацию  $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_output_full_specification_of_ui_comp => ui_nrel_command_lang_template: [Output full specification of $ui_arg_1] (* <- lang_en;; *);;

@@ -1,0 +1,38 @@
+sc_node_not_relation ->	 concept_color_space;;
+
+concept_color_space => nrel_idtf: [множество цветовых пространств](*<- lang_ru ;;*);;
+concept_color_space =>  nrel_main_idtf: [color space](*<- lang_en ;;*);;
+concept_color_space =>  nrel_main_idtf: [цветовое пространство](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_color_space;;
+	=> nrel_main_idtf: [Опр.(цветовое пространство)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_model;;
+			-> set;;
+			-> rrel_primary_color;;
+			-> nrel_axis;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Цветовое пространство - это множество всевозмножных цветов определенной цветовой модели, в котором количество осей равно количеству основных цветов.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_color_space;;
+	-> rrel_key_sc_element: concept_color;;
+	-> rrel_key_sc_element: nrel_coordinate;;
+	
+	=> nrel_main_idtf: [Утверждение(цветовое пространство, цвет, координатa*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовое пространство строится таким образом, чтобы любой цвет был представим точкой, имеющей определённые координаты, причём так, чтобы одному набору координат соответствовал один цвет.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+

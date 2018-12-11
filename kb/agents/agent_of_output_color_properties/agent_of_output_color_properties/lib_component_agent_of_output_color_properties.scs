@@ -1,0 +1,36 @@
+lib_component_agent_of_output_color_properties
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент вывода всех свойств заданного цвета]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of output all color properties]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_output_color_properties; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_of_output_color_properties.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+
+sc_node_not_relation -> action_of_output_color_properties;;
+
+action_of_output_color_properties => nrel_main_idtf:
+	[действие. вывести все свойства заданного цвета]
+		(*<- lang_ru;;*);;
+action_of_output_color_properties => nrel_main_idtf:
+	[action. output all color properties]
+		(* <- lang_en;; *);;

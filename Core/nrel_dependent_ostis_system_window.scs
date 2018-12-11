@@ -1,0 +1,52 @@
+sc_node_norole_relation -> nrel_dependent_window_ostis_system;;
+
+nrel_dependent_window_ostis_system => nrel_main_idtf: 
+ 		[зависимое окно ostis-системы*](*<- lang_ru ;;*);
+		[dependent window ostis system*](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: nrel_dependent_window_ostis_system;;
+	=> nrel_main_idtf: [Опр.(Зависимое окно ostis системы*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> binary_relation;;
+			-> concept_ostis_system_window;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Зависимое окно ostis системы - бинарное отношение, вторыми компонентами связок которого являются окна ostis системы, появление которых зависит от появления окон ostis системы, находящихся на месте первых компонентов связи.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: nrel_dependent_window_ostis_system;;
+	-> rrel_key_sc_element: concept_table_component;;
+	
+	=> nrel_main_idtf: [Утверждение(Зависимое окно ostis системы*, окно ostis системы)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Отношение зависимое окно ostis системы задается на окнах, появление одного из которых зависит от поведения другого.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+window1 => nrel_dependent_window_ostis_system: window2;;
+concept_ostis_system_window -> window1;;
+concept_ostis_system_window -> window2;;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_dependent_window_ostis_system;;
+binary_relation => nrel_measurement: [2];;
+number -> [2];;
+
+nrel_dependent_window_ostis_system => nrel_first_domain: concept_ostis_system_window;;
+nrel_dependent_window_ostis_system => nrel_second_domain: concept_ostis_system_window;;
+nrel_dependent_window_ostis_system => nrel_definitional_domain: concept_ostis_system_window;;
+
+oriented_relation -> nrel_dependent_window_ostis_system;;
+antireflexive_relation -> nrel_dependent_window_ostis_system;;
+antisymmetric_relation -> nrel_dependent_window_ostis_system;;
+antitransitive_relation -> nrel_dependent_window_ostis_system;;
+

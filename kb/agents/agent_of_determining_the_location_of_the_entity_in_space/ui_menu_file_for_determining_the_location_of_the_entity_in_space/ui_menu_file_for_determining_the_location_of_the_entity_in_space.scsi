@@ -1,0 +1,16 @@
+ui_menu_file_for_determining_the_location_of_the_entity_in_space <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_determining_the_location_of_the_entity_in_space => nrel_main_idtf: [Определить расположение сущности в пространстве] (* <- lang_ru;; *);;
+ui_menu_file_for_determining_the_location_of_the_entity_in_space => nrel_main_idtf: [Determine the location of the entity in space] (* <- lang_en;; *);;
+	
+ui_menu_file_for_determining_the_location_of_the_entity_in_space => ui_nrel_command_template:
+	[*
+		action_of_determining_the_location_of_the_entity_in_space _-> ._action_of_determining_the_location_of_the_entity_in_space_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_of_determining_the_location_of_the_entity_in_space_instance _<- question;;
+	*];;
+
+ui_menu_file_for_determining_the_location_of_the_entity_in_space => ui_nrel_command_lang_template: [Определить расположение $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_determining_the_location_of_the_entity_in_space => ui_nrel_command_lang_template: [Determine the location of $ui_arg_1] (* <- lang_en;; *);;

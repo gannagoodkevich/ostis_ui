@@ -1,0 +1,43 @@
+sc_node_not_relation ->	 concept_color_scheme;;
+
+concept_color_scheme => nrel_main_idtf:  [цветовая схема](*<- lang_ru ;;*);;
+concept_color_scheme => nrel_idtf: [множество цветовых схем](*<- lang_ru ;;*);;
+concept_color_scheme =>  nrel_main_idtf: [color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_color_scheme;;
+	=> nrel_main_idtf: [Опр.(цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_range;;
+			-> concept_space_entity;; 
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Цветовая схема - диапозонон связанных цветов, который может быть применен к коллекции пространственных объектов, растрам, графике компоновки или компонентам символов.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_color_scheme;;
+	-> rrel_key_sc_element: concept_color_circle;;
+	
+	=> nrel_main_idtf: [Утверждение(цветовая схема, цветовой круг)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовая схема составляется на базе цветового круга.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+concept_color_scheme => nrel_inclusion: 
+	   concept_monochromatic_color_scheme;
+	   concept_analogous_color_scheme;
+	   concept_complementary_color_scheme;
+	   concept_split_complementary_color_scheme;
+	   concept_triadic_color_scheme;
+	   concept_tetradic_color_scheme;
+	   concept_custom_color_scheme;;
