@@ -1,0 +1,50 @@
+sc_node_not_relation ->	 concept_analogous_color_scheme;;
+
+concept_analogous_color_scheme => nrel_main_idtf:  [аналоговая цветовая схема](*<- lang_ru ;;*);;
+concept_analogous_color_scheme => nrel_idtf: [множество аналоговых цветовых схем](*<- lang_ru ;;*);;
+concept_analogous_color_scheme =>  nrel_main_idtf: [analogous color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_analogous_color_scheme;;
+	=> nrel_main_idtf: [Опр.(аналоговая цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_scheme;;
+			-> nrel_analogous_color;;
+
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Аналоговая цветовая схема - цветовая схема, для получения которой используют цвета, идущие друг за другом на цветовом круге.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_analogous_color_scheme;;
+	-> rrel_key_sc_element: concept_color;;
+	
+	=> nrel_main_idtf: [Утверждение(аналоговая цветовая схема, цвет)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [В аналоговой цветовой схеме за основу берут три цвета.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_analogous_color_scheme<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://analog.jpg"
+		(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+*];;
+
+nrel_analogous_color => nrel_main_idtf:  [аналоговый цвет*](*<- lang_ru ;;*);;

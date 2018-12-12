@@ -1,0 +1,61 @@
+sc_node_not_relation ->	 concept_cmyk;;
+
+concept_cmyk => nrel_main_idtf:  [цветовая модель CMYK](*<- lang_ru ;;*);;
+concept_cmyk => nrel_idtf: [множество цветовых моделей CMYK](*<- lang_ru ;;*);;
+concept_cmyk =>  nrel_main_idtf: [CMYK](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_cmyk;;
+	=> nrel_main_idtf: [Опр.(цветовая модель CMYK)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_subtractive_color_model;;
+			-> nrel_color_mixing;;
+			-> rrel_primary_color;;
+			-> concept_color;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Цветовая модель CMYK - субтрактивная цветовая модель, любой цвет которой можно получить при смешении 4 основных цветов: голубого, пурпурного, черного и желтого.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_cmyk;;
+	-> rrel_key_sc_element: concept_cmy;;
+	
+	=> nrel_main_idtf: [Утверждение(цветовая модель CMYK, цветовая модель CMY)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовая модель CMYК – это расширенная цветовая модель CMY.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_cmyk;;
+	-> rrel_key_sc_element: concept_color;;
+	
+	=> nrel_main_idtf: [Утверждение(цветовая модель CMYK, цвет)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Kаждый из цветов описывается градацией от 0 до 100.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_cmyk<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://cmyk.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;

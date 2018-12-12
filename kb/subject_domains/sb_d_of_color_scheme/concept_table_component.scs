@@ -1,0 +1,47 @@
+sc_node_not_relation ->	 concept_table_component;;
+
+concept_table_component => nrel_idtf: [множество табличных компонентов](*<- lang_ru ;;*);;
+concept_table_component =>  nrel_main_idtf: [table component](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_table_component;;
+	=> nrel_main_idtf: [Опр.(табличный компонент)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_symbol;;
+			-> oriented_set;;
+			-> concept_text_component;;
+			-> concept_mark;;
+			-> nrel_idtf;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Табличный компонент - знак ориентировронного множества, элементами которого являются знаки ориентированных множетсв, идентификаторы(заголовки таблиц) и элементы которых представляют собой метки или текстовые компоненты.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_text_component;;
+	-> rrel_key_sc_element: concept_table_component;;
+	
+	=> nrel_main_idtf: [Утверждение(табличный компонент, текстовый компонент)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Табличный компонент включает в себя текстовый компонент.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+concept_container =>  nrel_inclusion: concept_tabbed_panel;;
+concept_container => nrel_inclusion: concept_table_component;;
+concept_container => nrel_inclusion: concept_ostis_system_window;;
+
+concept_symbol => nrel_main_idtf: [символ] (*<- lang_ru ;;*);;
+concept_mark => nrel_main_idtf: [метка] (*<- lang_ru ;;*);;
+concept_text_component => nrel_main_idtf: [текстовый компонент] (*<- lang_ru ;;*);;
+concept_ostis_system_window => nrel_main_idtf: [окно ostis системы] (*<- lang_ru ;;*);;
+concept_container => nrel_main_idtf: [контейнер] (*<- lang_ru ;;*);;
+concept_tabbed_panel => nrel_main_idtf: [панель с вкладками] (*<- lang_ru ;;*);;
+

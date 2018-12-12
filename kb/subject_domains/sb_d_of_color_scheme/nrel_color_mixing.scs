@@ -1,0 +1,41 @@
+sc_node_norole_relation -> nrel_color_mixing;;
+
+nrel_color_mixing => nrel_main_idtf: [смешение цветов*](*<- lang_ru ;;*);;
+nrel_color_mixing => nrel_main_idtf: [color mixing*](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: nrel_color_mixing;;
+	=> nrel_main_idtf: [Опр.(смешение цветов*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> binary_relation;;
+			-> concept_color;;
+			-> concept_color_model;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Смешение цветов* - квазибинарное неролевое отношение, первым компонентом которого является множество смешиваемых цветов, вторым - цвет, являющийся результатом смешивания.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+nrel_color_mixing => nrel_first_domain: concept_color;;
+nrel_color_mixing => nrel_second_domain: concept_color;;
+nrel_color_mixing => nrel_definitional_domain: concept_color;;
+
+relation => nrel_inclusion: quasybinary_relation;;
+quasybinary_relation -> nrel_color_mixing;;
+
+image =[*nrel_color_mixing <- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://mix.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;
+

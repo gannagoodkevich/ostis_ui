@@ -1,0 +1,48 @@
+sc_node_not_relation ->	 concept_complementary_color_scheme;;
+
+concept_complementary_color_scheme => nrel_main_idtf:  [комплементарная цветовая схема](*<- lang_ru ;;*);;
+concept_complementary_color_scheme => nrel_idtf: [множество комплементарных цветовых схем](*<- lang_ru ;;*);;
+concept_complementary_color_scheme =>  nrel_main_idtf: [complementary color scheme](*<- lang_en ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_complementary_color_scheme;;
+	=> nrel_main_idtf: [Опр.(комплементарная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> concept_color;;
+			-> concept_color_scheme;;
+			-> concept_color_circle;;
+			-> nrel_opposite;;
+
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Комплeментарная цветовая схема - цветовая схема, для получения который используется два противоположных цвета на цветовом круге.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element: concept_complementary_color_scheme;;
+		
+	=> nrel_main_idtf: [Утверждение(комплементарная цветовая схема)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Комплементарная цветовая схема воспринимается человеком как наиболее гармоничная.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+image =[*concept_complementary_color_scheme <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://compl.png"
+		(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+*];;
