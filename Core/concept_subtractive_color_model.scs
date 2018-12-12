@@ -1,0 +1,36 @@
+sc_node_not_relation ->	 concept_subtractive_color_model;;
+
+concept_subtractive_color_model => nrel_idtf: [множество субтрактивных цветовых моделей](*<- lang_ru ;;*);;
+concept_subtractive_color_model =>  nrel_main_idtf: [subtractive color model](*<- lang_en ;;*);;
+concept_subtractive_color_model =>  nrel_main_idtf: [cубтрактивная цветовая модель](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_subtractive_color_model;;
+	=> nrel_main_idtf: [Опр.(cубтрактивная цветовая модель)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> nrel_subtract_colors;;
+			-> concept_color_model;;
+			-> concept_color;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Субтрактивная цветовая модель - цветовая модель, в которой получение цвета основано на вычитании основного из белого цвета.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_subtractive_color_model;;
+	-> rrel_key_sc_element: concept_CMYK;;
+	
+	=> nrel_main_idtf: [Утверждение(субтрактивная цветовая модель, цветовая модель CMYK)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовая модель CMYK - субтрактивная цветовая модель.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+nrel_subtract_colors => nrel_main_idtf: [вычитаниe цветов*] (*<- lang_ru ;;*);;

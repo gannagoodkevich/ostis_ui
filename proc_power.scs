@@ -1,0 +1,198 @@
+scp_program -> proc_power
+	(*
+		-> rrel_params : ...
+			(*
+				-> rrel_1 : rrel_in : _answer_set ;;
+			*);;
+		-> rrel_operators : ...
+			(*
+				-> rrel_init : .p_oper1
+					(*
+						<- searchSetStr3 ;;
+				
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer_set ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc1 ;;
+						-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _node ;;
+						-> rrel_set_3 : rrel_assign : rrel_scp_var : rrel_node : _set_power ;;
+
+						=> nrel_then : .p_oper2 ;;
+						=> nrel_else : .p_oper_return ;;
+					*);;
+				-> .p_oper2
+					(*
+						<- contAssign ;;
+						
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_link : _power ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_const : rrel_link : [0] ;;
+				
+						=> nrel_goto : .p_oper3 ;;
+					*);;
+				-> .p_oper3
+					(*
+						<- searchElStr3 ;;
+				
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _set_power ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+						-> rrel_3 : rrel_assign : rrel_scp_var : rrel_node : _nodeel ;;
+
+						=> nrel_then : .p_oper4 ;;
+						=> nrel_else : .p_oper6 ;;
+					*);;
+				-> .p_oper4
+					(*
+						<- eraseEl ;;
+			
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : rrel_erase : _arc2 ;;
+
+						=> nrel_goto : .p_oper5 ;;
+					*);;
+				-> .p_oper5
+					(*
+						<- contAdd ;;
+					
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_link : _power ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_var : rrel_link : _power ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_const : rrel_link : [1] ;;
+						
+						=> nrel_goto : .p_oper3 ;;
+					*);;
+				-> .p_oper6
+					(*
+						<- contAssign ;;
+		
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_link : _calc_power ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_var : rrel_link : _power ;;
+						
+						=> nrel_goto : .p_oper7 ;;
+					*);;
+				-> .p_oper7
+					(*
+						<- contLn ;;
+		
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_link : _p1 ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_var : rrel_link : _calc_power ;;
+	
+						=> nrel_goto : .p_oper8 ;;
+					*);;
+				-> .p_oper8
+					(*
+						<- contPow ;;
+		
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_link : _p2 ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_var : rrel_link : _calc_power ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_const : rrel_link : [2] ;;
+	
+						=> nrel_goto : .p_oper9 ;;
+					*);;
+				-> .p_oper9
+					(*
+						<- contMult ;;
+		
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_link : _p3 ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_var : rrel_link : _p2 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_const : rrel_link : [4] ;;
+	
+						=> nrel_goto : .p_oper10 ;;
+					*);;
+				-> .p_oper10
+					(*
+						<- contAdd ;;
+		
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_link : _p4 ;;
+						-> rrel_2 : rrel_fixed : rrel_scp_var : rrel_link : _p1 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_link : _p3 ;;
+	
+						=> nrel_goto : .p_oper11 ;;
+					*);;
+				-> .p_oper11
+					(*
+						<- printNl ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _p4;;
+
+						=> nrel_goto : .p_oper12 ;;
+					*);;
+				-> .p_oper12
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer_set ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_common : _com ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_link : _power ;;
+
+						=> nrel_goto : .p_oper13 ;;
+					*);;
+				-> .p_oper13
+					(*
+						<- genElStr3 ;;
+				
+						-> rrel_1 : rrel_fixed : rrel_scp_const : rrel_norole_relation : nrel_power ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arcc ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_common : _com ;;
+	
+						=> nrel_goto : .p_oper14 ;;
+					*);;
+				-> .p_oper14
+					(*
+						<- genEl ;;
+		
+						-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node : _answer ;;
+
+						=> nrel_goto : .p_oper15 ;;
+					*);;
+				-> .p_oper15
+					(*
+						<- genElStr3 ;;
+						
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _a1 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _answer_set ;;
+
+						=> nrel_goto : .p_oper16 ;;
+					*);;
+				-> .p_oper16
+					(*
+						<- genElStr3 ;;
+						
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _a2 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_common : _com ;;
+
+						=> nrel_goto : .p_oper17 ;;
+					*);;
+				-> .p_oper17
+					(*
+						<- genElStr3 ;;
+						
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _a3 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_link : _power ;;
+
+						=> nrel_goto : .p_oper18 ;;
+					*);;
+				-> .p_oper18
+					(*
+						<- genElStr3 ;;
+						
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _a4 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_pos_const_perm : _arcc ;;
+
+						=> nrel_goto : .p_oper19 ;;
+					*);;
+				-> .p_oper19
+					(*
+						<- genElStr3 ;;
+						
+						-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer ;;
+						-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _a1 ;;
+						-> rrel_3 : rrel_fixed : rrel_scp_const : rrel_norole_relation : nrel_power ;;
+
+						=> nrel_goto : .p_oper_return ;;
+					*);;
+				-> .p_oper_return
+					(*
+						<- return ;;
+					*);;
+			*);;
+	*);;

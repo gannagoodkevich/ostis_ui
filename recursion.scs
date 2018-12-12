@@ -1,0 +1,92 @@
+scp_program -> proc_recursion
+	(*
+		-> rrel_params: ...
+			(*
+				-> rrel_1 : rrel_in : _set;;
+				-> rrel_2 : rrel_in : _answer_set ;;
+				-> rrel_3 : rrel_in : _concept ;;
+			*);;
+		-> rrel_operators: ...
+			(*
+				-> rrel_init: .oper1
+				(*
+					<- searchSetStr3;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _set;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el;;
+
+					-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_el;;
+
+					=> nrel_then: .oper2;;
+					=> nrel_else: .oper_return;;
+				*);;
+				-> .oper2
+				(*
+					<- searchElStr3;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _set_el;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _els;;
+
+					=> nrel_then: .oper3;;
+					=> nrel_else: .oper_return;;
+				*);;
+				-> .oper3
+				(*
+					<- eraseEl;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc2;;
+
+					=> nrel_goto: .oper4;;
+				*);;
+				-> .oper4
+				(*
+					<- searchElStr3;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_const: rrel_not_relation: _concept;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _els;;
+
+					=> nrel_then: .oper5;;
+					=> nrel_else: .oper6;;
+				*);;
+				-> .oper5
+				(*
+					<- genElStr3 ;;
+					
+					-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node : _answer_set ;;
+					-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc4 ;;
+					-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _els ;;
+
+					=>nrel_goto : .oper2 ;;
+				*);;
+				-> .oper6
+				(*
+					<- call;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_const: proc_recursion;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: ...
+					(*
+						-> rrel_1: rrel_fixed: rrel_scp_var: _els;;
+						-> rrel_2: rrel_fixed : rrel_scp_var : _answer_set ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: _concept ;;
+					*);;
+					-> rrel_3: rrel_assign: rrel_scp_var: _descr_rec;;
+
+					=> nrel_goto: .oper7;;
+				*);;
+				-> .oper7
+				(*
+					<- waitReturn;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: _descr_rec;;
+
+					=> nrel_goto: .oper2;; 
+				*);;
+				-> .oper_return
+				(*
+					<- return;;
+				*);;
+			*);;
+	*);;

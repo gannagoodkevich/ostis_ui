@@ -1,0 +1,86 @@
+scp_program -> proc_ishod
+	(*
+		-> rrel_params: ... ;;
+		-> rrel_operators: ... 
+			(*
+				-> rrel_init: .proc_oper1
+					(*
+						<- genEl;;
+					
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _answer_set;;
+					
+						=> nrel_goto: .proc_oper2;; 
+					*);;
+				-> .proc_oper2
+					(*
+						<- call;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: proc_recursion;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: ...
+							(*
+								-> rrel_1: rrel_fixed: rrel_scp_const: _set;;
+								-> rrel_2: rrel_fixed: rrel_scp_var: _answer_set ;;
+								-> rrel_3: rrel_fixed: rrel_scp_const: rrel_not_relation: concept_triangle ;; 
+							*);;
+						-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+						=> nrel_goto: .proc_oper3;;
+					*);;
+				-> .proc_oper3
+					(*
+						<- waitReturn;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+						=> nrel_goto: .proc_oper4;;
+					*);;
+				-> .proc_oper4
+					(*
+						<- call;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: proc_recursion;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: ...
+							(*
+								-> rrel_1: rrel_fixed: rrel_scp_const: _set;;
+								-> rrel_2: rrel_fixed: rrel_scp_var: _answer_set ;;
+								-> rrel_3: rrel_fixed: rrel_scp_const: rrel_not_relation: concept_circle ;;
+							*);;
+						-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
+
+						=> nrel_goto: .proc_oper5;;
+					*);;
+				-> .proc_oper5
+					(*
+						<- waitReturn;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
+
+						=> nrel_goto: .proc_oper6;;
+					*);;
+				-> .proc_oper6
+					(*
+						<- call;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: proc_power;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: ...
+							(*
+								-> rrel_1: rrel_fixed: rrel_scp_var : _answer_set;;
+							*);;
+						-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+						=> nrel_goto: .proc_oper7;;
+					*);;
+				-> .proc_oper7
+					(*
+						<- waitReturn;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
+
+						=> nrel_goto: .proc_oper_return;;
+					*);;
+				-> .proc_oper_return
+					(*
+						<- return;;
+					*);;
+			*);;
+	*);;

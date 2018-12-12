@@ -1,0 +1,36 @@
+sc_node_not_relation ->	 concept_additive_color_model;;
+
+concept_additive_color_model => nrel_idtf: [множество аддитивных цветовых моделей](*<- lang_ru ;;*);;
+concept_additive_color_model =>  nrel_main_idtf: [additive color model](*<- lang_en ;;*);;
+concept_additive_color_model =>  nrel_main_idtf: [аддитивная цветовая модель](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+	-> rrel_key_sc_element: concept_additive_color_model;;
+	=> nrel_main_idtf: [Опр.(аддитивная цветовая модель)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+			-> nrel_add_colors;;
+			-> concept_color_model;;
+			-> concept_color;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*	
+			-> rrel_example: [Aддитивная  цветовая модель - цветовая модель, в которой получение цвета основано на сложении основного цвета с черным цветом.](*<- lang_ru ;;*);;
+		*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_additive_color_model;;
+	-> rrel_key_sc_element: concept_RGB;;
+	
+	=> nrel_main_idtf: [Утверждение(аддитивная цветовая модель, цветовая модель RGB)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example: [Цветовая модель RGB - аддитивная цветовая модель.](*<- lang_ru;;*);;
+
+		*);;
+*);;
+
+nrel_add_colors => nrel_main_idtf: [сложениe цветов*] (*<- lang_ru ;;*);;
